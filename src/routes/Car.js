@@ -22,6 +22,7 @@ const Car = () => {
     }
     return (
         <div className="Carrito">
+            <h1>Carrito de compras</h1>
             <div className="tarjetasCar">
             <p></p>
             <p>Producto</p>

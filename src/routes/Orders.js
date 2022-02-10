@@ -6,6 +6,7 @@ const Orders = () => {
 let suma=0;
    return (
         <div className="Carrito">
+            <h1>Mis compras</h1>
             <div className="tarjetasCar">
             <p></p>
             <p>Producto</p>

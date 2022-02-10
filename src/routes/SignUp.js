@@ -48,10 +48,10 @@ const SignUp = () => {
                     </div>
 
 
-                    <button className='botonLogin'>Ingresar</button>
+                    
                 </div>
-                
-                <p>¿Ya estás registrado?<Link to="../login">Inicia Sesión</Link></p>
+                <button className='botonLogin'>Ingresar</button>
+                <p style={{alignSelf: "center"}}>¿Ya estás registrado?<Link to="../login">Inicia Sesión</Link></p>
 
             </form>
         </div>

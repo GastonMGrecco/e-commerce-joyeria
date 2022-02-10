@@ -12,7 +12,7 @@ import login from './login.png';
 import logout from './logout.png';
 import sobrenosotros from './sobrenosotros.png';
 import contactanos from './contactanos.png';
-console.log(localStorage.getItem("token"))
+console.log(localStorage.getItem("token"));
 
 
 function App() {
@@ -54,8 +54,7 @@ function App() {
               { visibility: "hidden", position:"absolute"} : { visibility: "visible" }}>
             <img className="inicio" src={login} alt="Tienda" /></Link>
           <Link title="Inicio" className="Paginas"
-            to="/" style={localStorage.getItem("token") ?
-              { visibility: "visible" } : { visibility: "hidden" }}>
+            to="/" >
             <img className="inicio" src={inicio} alt="" /></Link>
           <Link title="Sobre nosotros" className="Paginas"
             to="/aboutus" style={localStorage.getItem("token") ?

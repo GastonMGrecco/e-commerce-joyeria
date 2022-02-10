@@ -6,6 +6,7 @@ import { getProductosThunk,getCategoriasThunk,getProductosNombreThunk } from '..
 
 
 
+
 const Shop = () => {
     const productos=useSelector(state=>state.productos);
     const categorias=useSelector(state=>state.categorias);

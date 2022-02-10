@@ -55,7 +55,7 @@ const agregarAlCarrito=(id,cantidad)=>{
             {producto.map(pro=>(
 
                     <div className='tarjetaInd' key={pro.name}>
-                        <img className="imagen"src={pro.images?.[0].url} alt='' />
+                        <img className="imagenId"src={pro.images?.[0].url} alt='' />
                         <div className='info'>
                             <h1>{pro.name}</h1>
                             <p>{pro.description}</p>

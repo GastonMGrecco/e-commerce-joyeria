@@ -26,6 +26,7 @@ const Login = () => {
         <div className='login'>
             <form className='loginForm' onSubmit={handleSubmit(submit)}>
                 <div className='ejemplo'>
+                    <h3 style={{alignSelf: "center", fontSize:"15px"}}>Puedes utilizar estos datos</h3>
                     <p className='in'>E-mail: admin@admin.com</p>
                     <p className='in'>Contraseña: "root"</p>
                 </div>
@@ -47,7 +48,7 @@ const Login = () => {
 
                     <button className='botonLogin'>Ingresar</button>
                 </div>
-                <p>¿No estás registrado?<Link to="./signup">Regístrate</Link></p>
+                <p style={{alignSelf: "center"}}>¿No estás registrado?<Link to="./signup">Regístrate</Link></p>
 
             </form>
         </div>
