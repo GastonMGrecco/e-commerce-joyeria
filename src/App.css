@@ -420,3 +420,55 @@ margin-top:100px;
  justify-content:space-around;
 
 }
+.sobrenosotros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.sobrenon1{
+  width: 80%;
+  height: 200px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px gray;
+}
+.sobrenon{
+  width: 70%;
+  height: 350px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px gray;
+}
+.quiensomos{
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: justify;
+  
+
+}
+footer{
+  background-color: rgba(128, 128, 128, 0.228);
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  
+}
+.enlace{
+  font-size: 10px;
+  text-decoration: none;
+}
+.div{
+  display: flex;
+  flex-direction: column;
+}
+.creditos{
+  text-align: center;
+}

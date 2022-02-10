@@ -1,12 +1,30 @@
 import React from 'react';
+import contact from '../imagencontacto.jfif';
 
 
 const ContactUs = () => {
     return (
-        <div className="FotoInicio">
-            <h3 className='subtitulojoyeria2'>Joyería Alemana</h3>
-          <h1 className="tituloJoyeria">La Vergüen Paraden</h1>
-          <h2 className='subtitulojoyeria'>Conoce nuestro catálogo</h2>
+        <div >
+            <h1>Contáctanos</h1>
+          <div className="sobrenosotros">
+          <img className="sobrenon1"src={contact}alt=""/>
+            <p className="quiensomos">
+            Para todas las consultas de clientes y ventas, comuníquese con:
+            </p>
+           
+            <p className="quiensomos">
+            Customer service<br></br>
+                email@example.com<br></br>
+
+                Wholesale inquiries<br></br>
+                email@example.com<br></br>
+
+                Press inquiries<br></br>
+                email@example.com<br></br>
+
+
+            </p>
+            </div>
         </div>
     );
 };

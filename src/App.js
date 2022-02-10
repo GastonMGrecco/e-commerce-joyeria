@@ -99,6 +99,39 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
         </Route>
       </Routes>
+      <footer>
+      <div className='footer'>
+          <div className="div">
+            <Link title="Cerrar sesión" to="/" className="enlace" onClick={Logout}
+              style={localStorage.getItem("token") ?
+                { visibility: "visible" } : { visibility: "hidden", position:"absolute"}}>
+              Cerrar Sesión</Link>
+            <Link title="Iniciar sesión" className="enlace"
+              to="/login" style={localStorage.getItem("token") ?
+                { visibility: "hidden", position:"absolute"} : { visibility: "visible" }}>
+              Iniciar sesión</Link>
+            <Link title="Inicio" className="enlace"
+              to="/" >
+              Inicio</Link>
+          </div>
+          
+          <div className="div">
+            <Link title="Sobre nosotros" className="enlace"
+              to="/aboutus" style={localStorage.getItem("token") ?
+                { visibility: "visible" } : { visibility: "hidden" }}>
+              Conócenos</Link>
+            <Link title="Contáctanos" className="enlace"
+              to="/contactus" style={localStorage.getItem("token") ?
+                { visibility: "visible" } : { visibility: "hidden" }}>
+              Contáctanos</Link>
+            <Link title="Tienda de Productos" className="enlace"
+              to="/shop" style={localStorage.getItem("token") ?
+                { visibility: "visible" } : { visibility: "hidden" }}>
+              Catálogo</Link>
+          </div>
+        </div>
+        <p className="creditos">Página desarrollada por Gastón M. Grecco, Desarrollador Full Stack</p>
+      </footer>
     </HashRouter>
 
   );
