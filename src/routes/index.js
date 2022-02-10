@@ -1,0 +1,10 @@
+export {default as Home} from "./Home";
+export {default as Login} from "./Login";
+export {default as Shop} from "./Shop";
+export {default as ProductId} from "./ProductId";
+export {default as Car} from "./Car";
+export {default as Orders} from "./Orders";
+export {default as SignUp} from "./SignUp";
+export {default as ContactUs} from "./ContactUs";
+export {default as AboutUs} from "./AboutUs";
+export {default as ProtectLogin} from "./Protectores/ProtectLogin";
