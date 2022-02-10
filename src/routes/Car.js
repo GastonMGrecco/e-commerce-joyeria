@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from 'react';
+import React, {useEffect} from 'react';
 import { useSelector,useDispatch} from 'react-redux';
 import { setBorrarProductoThunk,getCarritoThunk,setModificarCantidadProductoThunk,setComprarThunk } from '../redux/actions';
 
@@ -6,7 +6,7 @@ const Car = () => {
     const Carrito=useSelector(state=>state.carrito)
         console.log(Carrito)
     const dispatch=useDispatch();
-    const [cantidad,setCantidad]=useState();
+    let cantidad;
     const borrarProducto=(id)=>{
         console.log(id)
         dispatch(setBorrarProductoThunk(id));
@@ -34,7 +34,10 @@ const Car = () => {
                 <img src={producto.product.images?.[0].url}alt=""style={{width:"100px", height:"100px"}}/>
                     <div>{producto.product?.name}</div>
                     <div>
-                    <input className="cant"type="text" disable="false"placeholder={producto?.quantity} value={cantidad}
+                    <input className="cant"
+                    type="text" disable="false"
+                    placeholder={producto?.quantity} 
+                    value={cantidad}
                     onChange={e=>dispatch(setModificarCantidadProductoThunk(producto.id.toString(),{
                         "quantity":e.target.value }))} 
                         style={false?{visibility:"hidden"}:{visibility:"visible"}}/>
