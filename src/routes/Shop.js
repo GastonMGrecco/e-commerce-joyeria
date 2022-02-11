@@ -20,8 +20,10 @@ const Shop = () => {
    
  
 useEffect(()=>{
-
-    dispatch(getProductosThunk());
+    
+        dispatch(getProductosThunk());
+    
+    
 
 },[dispatch])
 

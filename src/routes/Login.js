@@ -16,7 +16,7 @@ const Login = () => {
         .then(res=>{
             localStorage.setItem("token",res.data.access);
             navigate("/shop");
-            window.location.reload();  
+             
         })
         .catch(()=>console.log("El usuario o contrasea no existe"))
          
