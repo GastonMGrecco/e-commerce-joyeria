@@ -508,9 +508,17 @@ footer{
   margin:10px;
 }
 .imagenId{
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 75%;
-  height: 75%;
-  transition:all .5s ease-in-out;
+  height: 200px;
+  transition-property: background-image;
+  transition-duration: 2s;
+
+ 
+
 }
 /*------------------------------------------------------------------------------*/
 /*Pantalla mas de 700 px de ancho*/

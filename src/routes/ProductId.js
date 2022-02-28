@@ -56,10 +56,11 @@ const agregarAlCarrito=(id,cantidad)=>{
 
                     <div className='tarjetaInd' key={pro.name}>
                         <div className="pasaimgs" > 
-                            <img className="imagenId"
-                                src={imagen === '1'?pro.images?.[0].url:
-                                     imagen === '2'?pro.images?.[1].url:
-                                                    pro.images?.[2].url} alt='' />
+                        
+                            <div className="imagenId"
+                                style={imagen === '1'?{backgroundImage:`url(${pro.images?.[0].url})`}:
+                                       imagen === '2'?{backgroundImage:`url(${pro.images?.[1].url})`}:
+                                                    {backgroundImage:`url(${pro.images?.[2].url})`} }/>
                             <div className='botonesPasaImgs'>
                                 <button className='botonPasaImg' onClick={()=>{setImagen('1')}}/>
                                 <button className='botonPasaImg' onClick={()=>{setImagen('2')}}/>
