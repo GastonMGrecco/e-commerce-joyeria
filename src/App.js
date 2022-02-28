@@ -123,7 +123,7 @@ function App() {
             <Link title="Contáctanos" className="enlace"
               to="/contactus" style={localStorage.getItem("token") ?
                 { visibility: "visible" } : { visibility: "hidden" }}>
-              Contáctame</Link>
+              Contáctanos</Link>
             <Link title="Tienda de Productos" className="enlace"
               to="/shop" style={localStorage.getItem("token") ?
                 { visibility: "visible" } : { visibility: "hidden" }}>
