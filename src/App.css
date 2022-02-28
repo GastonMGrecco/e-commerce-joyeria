@@ -242,10 +242,7 @@ ul{
   left:0;
   height:100%;
 }
-.imagenId{
-  width: 50%;
-  height: 50%;
-}
+
 h1{
   font-size: 15px;
   color: black;
@@ -488,6 +485,32 @@ footer{
 }
 .creditos{
   text-align: center;
+}
+.pasaimgs{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.botonesPasaImgs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.botonPasaImg{
+  width:15px;
+  height:15px;
+  background-color: rgb(19, 18, 17);
+  border-radius: 50%;
+  margin:10px;
+}
+.imagenId{
+  width: 75%;
+  height: 75%;
+  transition:all .5s ease-in-out;
 }
 /*------------------------------------------------------------------------------*/
 /*Pantalla mas de 700 px de ancho*/

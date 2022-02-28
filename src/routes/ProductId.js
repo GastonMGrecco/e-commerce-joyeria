@@ -14,7 +14,7 @@ const producto= productos.filter(prod=>prod.name===id);
 const navigate=useNavigate();
 const dispatch=useDispatch();
 const [cantidad,setCantidad]=useState(1);
-
+const [imagen,setImagen]=useState("1")
 const restar=()=>{
     setCantidad(cantidad-1);
 }
@@ -55,7 +55,18 @@ const agregarAlCarrito=(id,cantidad)=>{
             {producto.map(pro=>(
 
                     <div className='tarjetaInd' key={pro.name}>
-                        <img className="imagenId"src={pro.images?.[0].url} alt='' />
+                        <div className="pasaimgs" > 
+                            <img className="imagenId"
+                                src={imagen === '1'?pro.images?.[0].url:
+                                     imagen === '2'?pro.images?.[1].url:
+                                                    pro.images?.[2].url} alt='' />
+                            <div className='botonesPasaImgs'>
+                                <button className='botonPasaImg' onClick={()=>{setImagen('1')}}/>
+                                <button className='botonPasaImg' onClick={()=>{setImagen('2')}}/>
+                                <button className='botonPasaImg' onClick={()=>{setImagen('3')}}/>
+                            </div>    
+                        </div>
+                        
                         <div className='info'>
                             <h1>{pro.name}</h1>
                             <p>{pro.description}</p>
